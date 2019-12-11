@@ -1,15 +1,17 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on 11/12/2019
 
 ### Project Title
-Replace the Project Title
+Bike trips analysis
 
 ### Description
-Describe what your project is about and what it does
+THis project attempts to give a highlevel analysis of bike riders' trips from 3 different cities (Washinton, Chicago, and new york) 
 
 ### Files used
-Include the files used
+bikeshare.py
+washington.csv
+chicago.csv
+new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Thanks to all those who helped in building this project including Mohammed. K and Khalid M
