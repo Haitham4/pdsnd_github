@@ -3,12 +3,11 @@ import datetime as dt
 import calendar as cal
 import time
 
-filename = 'chicago.csv'
-
 city_list = ['chicago', 'new york city', 'washington', 'all']
 month_list = ['January', 'February', 'March', 'April', 'May', 'June', 'All']
 days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'All']
 
+# Get inputs from user
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -39,7 +38,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+# Load datasets into a dataframe
 def load_data(city, month, day):
 
     cities = {
