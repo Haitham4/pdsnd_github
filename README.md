@@ -5,7 +5,7 @@ This project was created on 11/12/2019
 Bike trips analysis
 
 ### Description
-THis project attempts to give a highlevel analysis of bike riders' trips from 3 different cities (Washinton, Chicago, and new york) 
+This project attempts to give a highlevel analysis of bike riders' trips from 3 different cities (Washinton, Chicago, and New York) 
 
 ### Files used
 bikeshare.py
