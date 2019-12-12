@@ -3,12 +3,11 @@ import datetime as dt
 import calendar as cal
 import time
 
-filename = 'chicago.csv'
-
 city_list = ['chicago', 'new york city', 'washington', 'all']
 month_list = ['January', 'February', 'March', 'April', 'May', 'June', 'All']
 days_of_week = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday', 'All']
 
+# Get inputs from user
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -39,9 +38,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-#print(get_filters())
-#exit()
-
+# Load datasets into a dataframe
 def load_data(city, month, day):
 
     cities = {
@@ -156,6 +153,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
+
 def main():
     while True:
         city, month, day = get_filters()
@@ -171,25 +169,3 @@ def main():
             break
 
 main()
-
-# print(load_data('chicago', 'March', 'Tuesday'))
-# load data file into a dataframe
-# df = pd.read_csv(filename)
-# convert the Start Time column to datetime
-# print(df['Start Time'])
-# df['Start Time'] = pd.to_datetime(df['Start Time'])
-# print(df['Start Time'].dt.month)
-
-# extract hour from the Start Time column to create an hour column
-# df['hour'] = df['Start Time'].dt.hour
-
-# find the most common hour (from 0 to 23)
-# popular_hour = df['hour'].value_counts().sort_values(axis='index', ascending=False)
-#print(sorted(popular_hour.index))
-
-# print('Most Frequent Start Hour:', popular_hour)
-
-# print(df.columns.values)
-# user_types = df['User Type'].value_counts()
-
-# print(user_types)
